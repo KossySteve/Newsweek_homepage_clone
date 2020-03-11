@@ -1,0 +1,188 @@
+@media (max-width: 1000px) {
+  .logo {
+    display: none;
+  }
+
+  nav p {
+    background: linear-gradient(149deg, rgba(235, 44, 160, 1) 16%, rgba(223, 89, 32, 1) 80%);
+    color: white;
+    display: block;
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    height: 60px;
+    padding-top: 15px;
+    text-align: center;
+    width: 105px;
+  }
+
+  .nav-search ul {
+    height: 60px;
+    padding-top: 16px;
+  }
+
+  .nav-icons i {
+    padding: 20px;
+  }
+
+  .nav-contacts {
+    display: none;
+  }
+
+  .main-news-gradient {
+    background: linear-gradient(163deg, rgba(255, 64, 0, 0) 0%, rgba(0, 0, 0, 0) 82%);
+  }
+
+  .main-news-titles {
+    margin-top: 150px;
+  }
+
+  .grid-template {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px repeat(3, 1fr);
+    max-width: 1150px;
+    margin: auto;
+    margin-top: 70px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .grid-template h2 {
+    grid-column: span 3;
+  }
+
+  .funding > :last-child {
+    display: none;
+  }
+
+  .funding-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .updates {
+    flex-direction: column;
+  }
+
+  .updates p :first-child {
+    padding-left: 0;
+  }
+
+  .updates p {
+    margin-top: 10px;
+  }
+
+  .most-popular {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 85px;
+    grid-template-rows: 1fr 1fr;
+    background-color: white;
+  }
+
+  nav p {
+    height: 40px;
+    padding-top: 5px;
+  }
+
+  .nav-search ul {
+    display: none;
+  }
+
+  .nav-icons i {
+    padding: 10px;
+  }
+
+  .nav-icons :last-child {
+    display: inline-block;
+  }
+
+  .tech-festival {
+    grid-column: span 2;
+  }
+
+  .header-news {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .main-header-news {
+    grid-row: span 1;
+  }
+
+  .main-news-titles {
+    margin-top: 10px;
+    height: 200px;
+  }
+
+  .main-news-titles h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .header-news h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .header-news article {
+    height: 200px;
+  }
+
+  .image-credits {
+    padding-top: 0;
+  }
+
+  .grid-template {
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+  }
+
+  .grid-template h2 {
+    grid-column: span 1;
+  }
+
+  .funding-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px repeat(3, 1fr);
+  }
+
+  .updates {
+    grid-column: span 1;
+  }
+
+  .updates p {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .updates-border {
+    border-right: none;
+  }
+
+  .updates p a {
+    padding-left: 0;
+  }
+
+  .most-popular {
+    grid-template-columns: 1fr;
+  }
+
+  .article_grid_small_device article img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+
+  .article_grid_small_device article h3 {
+    font-size: 15px;
+  }
+}
