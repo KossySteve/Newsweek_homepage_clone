@@ -8,149 +8,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
      crossorigin="anonymous">
      <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Oswald', sans-serif;
-}
-
-a {
-  color: black;
-}
-
-.btn-secondary {
-  position: relative;
-  top: -35px;
-  background-color: rgb(184, 181, 181);
-  color: red;
-}
-
-.caption {
-  margin: 0;
-  position: relative;
-  top: -20px;
-  line-height: 22px;
-}
-
-.caption p {
-  font-size: 18px;
-  line-height: 22px;
-}
-
-.caption hr {
-  margin: 0;
-  padding: 0;
-}
-
-.caption_1 {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  top: -15px;
-}
-
-.newsletter {
-  border: 1px solid rgb(221, 217, 217);
-  padding: 0;
-  height: 55vh;
-}
-
-.bg-secondary {
-  background-color: rgb(238, 236, 236);
-}
-
-.text-secondary {
-  color: rgb(153, 151, 151);
-}
-
-.nav_font {
-  font-size: 14px;
-}
-
-header {
-  position: fixed;
-  top: 0;
-}
-
-.navbar {
-  background-color: #f72210;
-}
-
-.nav-link {
-  background-color: #f72210;
-}
-
-.navbar button {
-  background-color: white;
-}
-
-.in_magazine_row {
-  height: 54vh;
-}
-
-.magazine_btn {
-  background-color: #f72210;
-  position: absolute;
-  position: relative;
-  color: white;
-}
-
-.links a {
-  border-right: 1px solid grey;
-  text-decoration: none;
-}
-
-.listed_links :last-child {
-  border: 0;
-}
-
-.mx-md-auto {
-  width: 40vw;
-}
-
-@media only screen and (max-width: 768px) {
-  .mx-md-auto {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .nav_1 {
-    position: relative;
-    top: 20px;
-    display: none;
-  }
-
-  .mx-md-auto {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .nav_2 {
-    display: none;
-  }
-
-  .location {
-    display: none;
-  }
-
-  .links {
-    display: none;
-  }
-
-  main {
-    margin-top: 50px;
-  }
-}
-
-</style>
-
+     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
   
@@ -159,13 +18,13 @@ header {
               <nav class=" navbar navbar-expand-md navbar-light fixed-top px-0 nav_1 ">
                 <div class="d-flex justify-content-between align-items-baseline" >
                   <div class="d-flex align-items-baseline" >
-                    <a class="navbar-brand mr-sm-4 mr-1" href="#"><img src="images\logo.PNG" alt="big idea" width="150"></a>
+                    <a class="navbar-brand mr-sm-4 mr-1" href="#"><img src="images/logo.PNG" alt="big idea" width="150"></a>
                     <a class="navbar-brand text-white nav_font location" href="#">32 C Lagos, NG</a>
                   </div>
                   <div class="d-flex align-items-baseline">
                     <a href="#" class="btn btn-danger nav-link text-white nav_font border rounded-0 border-0"><b>SIGN IN</b></a>
                     <button class="btn bg-light nav-link text-danger nav_font border rounded-0 border-0 px-1 mx-2 mx-sm-4 py-1" type="submit"><b>SUSCRIBE ></b></button>
-                    <a class="btn bg-white navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#nav">
+                    <a class="btn bg-white navbar-toggler mr-3" href="#" data-toggle="collapse" data-target="#nav">
                       <i class="fas fa-bars"></i>
                     </a>
                    </div>
@@ -192,7 +51,7 @@ header {
               <div class=" d-flex justify-content-between align-items-baseline " >
           
                   <a class="navbar-brand text-white h6 px-4" href="#">32 C Lagos, NG</a>
-                  <a class="navbar-brand mr-sm-4 mr-1" href="#"><img src="images\logo.PNG" alt="big idea" width="450"></a>
+                  <a class="navbar-brand mr-sm-4 mr-1" href="#"><img src="images/logo.PNG" alt="big idea" width="450"></a>
                
                 <div class="d-flex align-items-baseline">
                   <a href="#" class="btn btn-danger nav-link text-white h6 border rounded-0 border-0"><b>SIGN IN</b></a>
@@ -219,129 +78,128 @@ header {
       <a href="#" class=" pr-3 "><b><i class="fas fa-search"></i></b></a>
     </div>
   </div> 
-  <b><hr></b>
+  <div><hr></div>
   </header>
 
 
 <main class="container-fluid mx-3">
-<div class="row pl-3" >
-<!------featured story column started----->
+      <div class="row pl-3" >
 
-<section class="featured_story d-flex flex-column  col-12 col-md-5 px-md-2 ml-lg-2 mr-lg-4 mr-4 col-lg ">
-  <article>
-    <h6 class="text-secondary">Featured Story</h6>
-    <a href="#" class="text-dark">
-       <img src="images\blair.webp" alt="news" width="100%" class="img-fluid ">
-       <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>POLITICS</b></span>
-    </a>
-    <div class="caption">
-        <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h3>
+        <div class="featured_story d-flex flex-column  col-12 col-md-5 px-md-2 ml-lg-2 mr-lg-4 mr-4 col-lg ">
+          <article class="article_image">
+              <h6 class="text-secondary">Featured Story</h6>
+              <a href="#" class="text-dark">
+              <img src="images/blair.webp" alt="news"  class="img-fluid ">
+              <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>POLITICS</b></span>
+              </a>
+        <div class="caption">
+        <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h4>
         <p><small>Buttigieg, 38, the first openly gay major presidential candidate, 
           has ended his 2020 White House bid. He may have to do a lot more to standout and make a difference</small>
         </p>
         <div class="caption_1">
-        <b><hr></b>
+        <hr>
          <a href="#">Past Pandemics by the Numbers and How Coronavirus Fits In</a>
-        <b><hr></b>
+        <hr>
         </div>         
     </div> 
   </article> 
-  <article>
+  <article class="article_image">
     <a href="#" class="text-dark">
-       <img src="images\blair.webp" alt="news" width="100%" class="img-fluid ">
+       <img src="images/blair.webp" alt="news" class="img-fluid ">
        <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>POLITICS</b></span>
     </a>
     <div class="caption">
-        <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h3>
+        <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h4>
         <p><small>Buttigieg, 38, the first openly gay major presidential candidate, 
           has ended his 2020 White House bid. He may have to do a lot more to standout and make a difference</small>
         </p>        
     </div> 
   </article>
-  <article>
+  <article class="article_image">
     <a href="#" class="text-dark">
-       <img src="images\DTrump.webp" alt="news" width="100%" class="img-fluid ">
+       <img src="images/DTrump.webp" alt="news" class="img-fluid ">
        <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>POLITICS</b></span>
     </a>
     <div class="caption">
-        <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h3>
+        <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h4>
         <p><small>Buttigieg, 38, the first openly gay major presidential candidate, 
           has ended his 2020 White House bid. He may have to do a lot more to standout and make a difference</small>
         </p>
         <div class="caption_1">
-        <b><hr></b>
+        <hr>
          <a href="#">Past Pandemics by the Numbers and How Coronavirus Fits In</a>
-        <b><hr></b>
+        <hr>
         </div>         
     </div> 
   </article>
-  <article>
+  <article class="article_image">
     <a href="#" class="text-dark">
-       <img src="images\city.webp" alt="news" width="100%" class="img-fluid ">
+       <img src="images/city.webp" alt="news" class="img-fluid ">
        <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>POLITICS</b></span>
     </a>
     <div class="caption">
-        <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h3>
+        <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h4>
         <p><small>Buttigieg, 38, the first openly gay major presidential candidate, 
           has ended his 2020 White House bid. He may have to do a lot more to standout and make a difference</small>
         </p>
         <div class="caption_1">
-        <b><hr></b>
+        <hr>
          <a href="#">Past Pandemics by the Numbers and How Coronavirus Fits In</a>
-        <b><hr></b>
+        <hr>
         </div>         
     </div> 
   </article>
-  <article>
+  <article class="article_image">
     <a href="#" class="text-dark">
-       <img src="images\Dtrump.webp" alt="news" width="100%" class="img-fluid ">
+       <img src="images/Dtrump.webp" alt="news" class="img-fluid ">
        <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>POLITICS</b></span>
     </a>
     <div class="caption">
-        <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h3>
+        <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h4>
         <p><small>Buttigieg, 38, the first openly gay major presidential candidate, 
           has ended his 2020 White House bid. He may have to do a lot more to standout and make a difference</small>
         </p>
         <div class="caption_1">
-        <b><hr></b>
+        <hr>
          <a href="#">Past Pandemics by the Numbers and How Coronavirus Fits In</a>
-        <b><hr></b>
+        <hr>
         </div>         
     </div> 
   </article>
-  <article>
+  <article class="article_image">
     <a href="#" class="text-dark">
-       <img src="images\city.webp" alt="news" width="100%" class="img-fluid ">
+       <img src="images/city.webp" alt="news" class="img-fluid ">
        <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>POLITICS</b></span>
     </a>
     <div class="caption">
-        <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h3>
+        <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h4>
         <p><small>Buttigieg, 38, the first openly gay major presidential candidate, 
           has ended his 2020 White House bid. He may have to do a lot more to standout and make a difference</small>
         </p>
         <div class="caption_1">
-        <b><hr></b>
+        <hr>
          <a href="#">Past Pandemics by the Numbers and How Coronavirus Fits In</a>
-        <b><hr></b>
+        <hr>
         </div>         
     </div> 
   </article>
 
-  <article>
+  <article class="article_image">
     <a href="#" class="text-dark">
-       <img src="images\city.webp" alt="news" width="100%" class="img-fluid ">
+       <img src="images/city.webp" alt="news" class="img-fluid ">
        <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>POLITICS</b></span>
     </a>
     <div class="caption">
-        <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h3>
+        <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h4>
         <p><small>Buttigieg, 38, the first openly gay major presidential candidate, 
           has ended his 2020 White House bid. He may have to do a lot more to standout and make a difference</small></p>       
     </div> 
   </article>
 
-  <article class="card my-3">
+  <article class="card my-3 article_image">
       <a href="#" class="text-dark">
-        <img src="images\JoeBiden.webp" alt="news" width="100%" class="img-fluid ">
+        <img src="images/JoeBiden.webp" alt="news"  class="img-fluid ">
         <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>POLITICS</b></span>
      </a>
       <div class="card-body px-4 py-2">
@@ -350,9 +208,9 @@ header {
         senator's strongest 2016 states: Kansas and Wisconsin</p>
       </div>
   </article>
-  <article class="card my-3">
+  <article class="card my-3 article_image">
     <a href="#" class="text-dark">
-      <img src="images\blair.webp" alt="news" width="100%" class="img-fluid ">
+      <img src="images/blair.webp" alt="news"  class="img-fluid ">
       <span class="btn world_btn btn-secondary rounded-0 border border-0 text-primary"><b>POLITICS</b></span>
    </a>
     <div class="card-body px-4 py-2">
@@ -361,9 +219,9 @@ header {
       senator's strongest 2016 states: Kansas and Wisconsin</p>
     </div>
   </article>
-  <article class="card my-3">
+  <article class="card my-3 article_image">
     <a href="#" class="text-dark">
-      <img src="images\JoeBiden.webp" alt="news" width="100%" class="img-fluid ">
+      <img src="images/JoeBiden.webp" alt="news"  class="img-fluid ">
       <span class="btn world_btn btn-secondary rounded-0 border border-0 text-primary"><b>POLITICS</b></span>
    </a>
     <div class="card-body px-4 py-2">
@@ -372,30 +230,23 @@ header {
       senator's strongest 2016 states: Kansas and Wisconsin</p>
     </div>
   </article>
+</div>
 
-
-</section>
-
-
-<!------featured story column ended----->
-  
-<!------Top story column ended----->
-
-<section class="top_story d-flex flex-column col-12 col-md col-lg-5 px-md-2">
-  <article>
+<div class="top_story d-flex flex-column col-12 col-md col-lg-5 px-md-2">
+  <article class="article_image_1">
     <h6 class="text-secondary">Top Story</h6>
     <a href="#" class="text-dark">
-        <img src="images\stories.webp" alt="news" width="100%" class="img-fluid ">
+        <img src="images/stories.webp" alt="news" class="img-fluid ">
         <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>WORLD</b></span>
     </a>
     <div class="caption">
-      <h4 class="h5"><a href="#"><b>Pete Buttigieg Ends Presidential Campaign in South Bend, Indiana</b></a></h3>
+      <h4 class="h5"><a href="#"><b>Pete Buttigieg Ends Presidential Campaign in South Bend, Indiana</b></a></h4>
       <p><small>Buttigieg, 38, the first openly gay major presidential candidate, 
         has ended his 2020 White House bid. He may have to do a lot more to standout and make a difference</small></p>
     </div>
   </article>
   <article class="d-inline-flex ">
-      <img src="images\DTrump.webp" alt="news" width="100" height="100" class="img-fluid" >
+      <img src="images/DTrump.webp" alt="news" width="100" height="100" class="img-fluid" >
       <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
       <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
       containment will remain the country's top priority</small>
@@ -404,19 +255,19 @@ header {
   <h6 class="text-secondary pt-5 "><b> CULTURE & TRAVEL</b></h6>
   <div class="d-inline-flex pb-5">
         <article>
-        <img src="images\DTrump.webp" alt="news" width="100%" class="img-fluid h-50" >
+        <img src="images/DTrump.webp" alt="news" class="img-fluid h-50" >
         <h6 class="h6 py-2"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</b></h6>
         <p class="text-muted py-2"><small>Chinese officials said that while the number of new cases is declining, treatment and 
           containment will remain the country's top priority</small></p>
         </article>
         <article class="px-3">
-        <img src="images\blair.webp" alt="news" width="100%" class="img-fluid h-50" >
+        <img src="images/blair.webp" alt="news"  class="img-fluid h-50" >
           <h6 class="h6 py-2"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</b></h6>
           <p class="text-muted py-2"><small>Chinese officials said that while the number of new cases is declining, treatment and 
             containment will remain the country's top priority</small></p> 
         </article>
         <article>
-        <img src="images\DTrump.webp" alt="news" width="100%" class="img-fluid h-50" >
+        <img src="images/DTrump.webp" alt="news"  class="img-fluid h-50" >
         <h6 class="h6 py-2"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</b></h6>
         <p class="text-muted py-2"><small>Chinese officials said that while the number of new cases is declining, treatment and 
           containment will remain the country's top priority</small></p>
@@ -424,307 +275,314 @@ header {
   </div>
   <div class="pt-5">
     <h6 class="text-secondary"><b>MORE STORIES</b></h6>
-    <b><hr></b>
+    <hr>
   </div>
   <article class="d-inline-flex">
-      <img src="images\stories.webp" alt="news" width="100" height="100" class="img-fluid" >
+      <img src="images/stories.webp" alt="news" width="100" height="100" class="img-fluid" >
       <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
       <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
       containment will remain the country's top priority</small>
       </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\stories.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/stories.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\DTrump.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/DTrump.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\stories.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/stories.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\stories.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/stories.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\stories.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/stories.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\stories.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/stories.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\stories.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/stories.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\stories.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/stories.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
+  <div><hr></div>
   <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
     <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  
-</section>
+  <div><hr></div>
+  <article class="d-inline-flex">
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
+    <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
+    containment will remain the country's top priority</small>
+    </h6>
+  </article>
+  <div><hr></div>
+  <article class="d-inline-flex">
+    <img src="images/blair.webp" alt="news" width="100" height="100" class="img-fluid" >
+    <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
+    <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
+    containment will remain the country's top priority</small>
+    </h6>
+  </article>
+</div>
 
-      
-    
-<!------Top story column ended----->
-
-<!------Opinion story column started-----> 
-      
-        <aside class="opinion_story d-flex flex-column  col-12 px-md-0 mx-lg- col-lg px-lg-3 ml-lg-0">
+<aside class="opinion_story d-flex flex-column  col-12 px-md-0 mx-lg- col-lg px-lg-3 ml-lg-0">
           <h6 class="text-secondary">Opinion</h6>
             <div class="d-inline-flex ">
-                <img src="images\allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2">
+                <img src="images/allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2 img-fluid">
                   <h6 class="h6 ml-3 text-left ">
                     <a href="#"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</b></a><br>
                     <small class="text-muted">BY AIMEE ALLISON</small>
                   </h6>
             </div>   
-            <b><hr></b>
+            <div><hr></div>
             <div class="d-inline-flex ">
-              <img src="images\allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2">
+              <img src="images/allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2 img-fluid">
                 <h6 class="h6 ml-3 text-left ">
                   <a href="#"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</b></a><br>
                   <small class="text-muted">BY AIMEE ALLISON</small>
                 </h6>
             </div>   
-            <b><hr></b>
+            <div><hr></div>
             <div class="d-inline-flex ">
-              <img src="images\allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2">
+              <img src="images/allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2 img-fluid">
                 <h6 class="h6 ml-3 text-left">
                   <a href="#"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</b></a><br>
                   <small class="text-muted">BY AIMEE ALLISON</small>
                 </h6>
             </div>   
-            <b><hr></b>
+            <div><hr></div>
             <div class="d-inline-flex ">
-              <img src="images\allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2">
+              <img src="images/allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2 img-fluid">
                 <h6 class="h6 ml-3 text-left nowrap">
                   <a href="#"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</b></a><br>
                   <small class="text-muted">BY AIMEE ALLISON</small>
                 </h6>
             </div>   
-            <b><hr></b>
-            <div class="d-inline-flex ">
-              <img src="images\allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2">
+            <div><hr></div>
+            <div class="d-inline-flex">
+              <img src="images/allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2 img-fluid">
                 <h6 class="h6 ml-3 text-left ">
                   <a href="#"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</b></a><br>
                   <small class="text-muted">BY AIMEE ALLISON</small>
                 </h6>
             </div>   
-            <b><hr></b>
+            <div><hr></div>
             <div class="d-inline-flex ">
-              <img src="images\allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2">
+              <img src="images/allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2 img-fluid">
                 <h6 class="h6 ml-3 text-left">
                   <a href="#"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</b></a><br>
                   <small class="text-muted">BY AIMEE ALLISON</small>
                 </h6>
             </div>   
-            <b><hr></b>
-            
-
-             <div class="mt-5 ">
+            <div><hr></div>
+            <div class="mt-5 ">
                   <h6 class="text-secondary mt-4"><b>THE DEBATE</b></h6>
-             </div>
-             <div class="d-inline-flex border border-danger">
-              <img src="images\stories.webp" alt="news" width="100" height="100" class="img-fluid" >
+            </div>
+            <div class="d-inline-flex border border-danger">
+              <img src="images/stories.webp" alt="news" width="100" height="100" class="img-fluid" >
               <h6 class="h6 ml-3 text-left "><b>More Than a Consolation Prize. It's a Necessity <br></b></h6>
              </div>
              <div>
-              <b><hr></b>
-              <b><hr></b>
+              <hr>
+              <hr>
              </div>
 
              <div class="d-inline-flex justify-content-between">
               <h6><a href="#" class=""><b>BY AIMEE ALLISON</b></a></h6>
-              <img src="images\allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2">
+              <img src="images/allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2 img-fluid">
              </div> 
              <div class="text-center">
                <h4>VS</h4>
              </div>
 
              <div class="d-inline-flex border border-danger">
-              <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
+              <img src="images/john.webp" alt="news" width="100" height="100" class="img-fluid" >
               <h6 class="h6 ml-3 text-left nowrap"><a href="#"><b>More Than a Consolation Prize. It's a Necessity <br></b></a></h6>
              </div>
              <div>
-              <b><hr></b>
-              <b><hr></b>
+              <hr>
+              <hr>
              </div>
 
              <div class="d-flex justify-content-between flex-row-reverse"> 
-              <img src="images\john.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2">
+              <img src="images/john.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2 img-fluid">
               <span><a href="#" class="pl-n5"><b>BY JOHN SKRNA</b></a></span>
              </div> 
 
@@ -733,42 +591,37 @@ header {
              </div>
 
              <div class="d-inline-flex border border-danger">
-              <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
+              <img src="images/john.webp" alt="news" width="100" height="100" class="img-fluid" >
               <h6 class="h6 ml-3 text-left nowrap"><a href="#"><b>More Than a Consolation Prize. It's a Necessity</b></a></h6>
              </div>
              <div><hr></div>
              <div class="d-inline-flex border border-danger">
-              <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
+              <img src="images/john.webp" alt="news" width="100" height="100" class="img-fluid" >
               <h6 class="h6 ml-3 text-left nowrap"><a href="#"><b>More Than a Consolation Prize. It's a Necessity</b></a></h6>
              </div>
              <div><hr></div>
              <div class="d-inline-flex border border-danger">
-              <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
+              <img src="images/john.webp" alt="news" width="100" height="100" class="img-fluid" >
               <h6 class="h6 ml-3 text-left nowrap"><a href="#"><b>More Than a Consolation Prize. It's a Necessity </b></a></h6>
              </div>
              <div><hr></div>
              <div class="d-inline-flex border border-danger">
-              <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
+              <img src="images/john.webp" alt="news" width="100" height="100" class="img-fluid" >
               <h6 class="h6 ml-3 text-left nowrap"><a href="#"><b>More Than a Consolation Prize. It's a Necessity </b></a></h6>
              </div>
              <div><hr></div>
              <div class="d-inline-flex border border-danger">
-              <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
+              <img src="images/john.webp" alt="news" width="100" height="100" class="img-fluid" >
               <h6 class="h6 ml-3 text-left nowrap"><a href="#"><b>More Than a Consolation Prize. It's a Necessity </b></a></h6>
              </div>
              <div><hr></div>
              <div class="d-inline-flex border border-danger">
-              <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
+              <img src="images/john.webp" alt="news" width="100" height="100" class="img-fluid" >
               <h6 class="h6 ml-3 text-left nowrap"><a href="#"><b>More Than a Consolation Prize. It's a Necessity </b></a></h6>
              </div>
-             <div><hr></div>
-             <div class="d-inline-flex border border-danger">
-              <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
-              <h6 class="h6 ml-3 text-left nowrap"><a href="#"><b>More Than a Consolation Prize. It's a Necessity </b></a></h6>
-             </div>
-             <div class="card my-3 mx-md-auto">
+             <div class="article_image_1 card my-3 mx-md-auto">
               <a href="#" class="text-dark">
-                <img src="images\JoeBiden.webp" alt="news" width="100%" class="img-fluid ">
+                <img src="images/JoeBiden.webp" alt="news"  class="img-fluid ">
                 <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>POLITICS</b></span>
              </a>
               <div class="card-body px-4 py-2 ">
@@ -777,9 +630,9 @@ header {
                 senator's strongest 2016 states: Kansas and Wisconsin</p>
               </div>
               </div>
-            <div class="card my-3 mx-md-auto">
+            <div class="article_image_1 card my-3 mx-md-auto">
                 <a href="#" class="text-dark">
-                  <img src="images\JoeBiden.webp" alt="news" width="100%" class="img-fluid ">
+                  <img src="images/JoeBiden.webp" alt="news" class="img-fluid ">
                   <span class="btn world_btn btn-secondary rounded-0 border border-0 text-primary"><b>SPONSORSHIP</b></span>
                 </a>
                 <div class="card-body px-4 py-2">
@@ -788,9 +641,9 @@ header {
                   senator's strongest 2016 states: Kansas and Wisconsin</p>
                 </div>
             </div>
-            <div class="card my-3 mx-md-auto">
+            <div class=" article_image_1 card my-3 mx-md-auto">
               <a href="#" class="text-dark">
-                <img src="images\city.webp" alt="news" width="100%" class="img-fluid ">
+                <img src="images/city.webp" alt="news" class="img-fluid ">
                 <span class="btn world_btn btn-secondary rounded-0 border border-0 text-primary"><b>SPONSORSHIP</b></span>
               </a>
               <div class="card-body px-4 py-2">
@@ -799,9 +652,9 @@ header {
                 senator's strongest 2016 states: Kansas and Wisconsin</p>
               </div>
             </div>
-            <div class="card my-3 mx-md-auto">
+            <div class="article_image_1 card my-3 mx-md-auto">
               <a href="#" class="text-dark">
-                <img src="images\JoeBiden.webp" alt="news" width="100%" class="img-fluid ">
+                <img src="images/JoeBiden.webp" alt="news" class="img-fluid ">
                 <span class="btn world_btn btn-secondary rounded-0 border border-0 text-primary"><b>SPONSORSHIP</b></span>
               </a>
               <div class="card-body px-4 my-3">
@@ -810,9 +663,9 @@ header {
                 senator's strongest 2016 states: Kansas and Wisconsin</p>
               </div>
             </div>
-            <div class="card my-3 mx-md-auto">
+            <div class="article_image_1 card my-3 mx-md-auto">
               <a href="#" class="text-dark">
-                <img src="images\city.webp" alt="news" width="100%" class="img-fluid ">
+                <img src="images/city.webp" alt="news" class="img-fluid ">
                 <span class="btn world_btn btn-secondary rounded-0 border border-0 text-primary"><b>SPONSORSHIP</b></span>
               </a>
               <div class="card-body px-4 py-2">
@@ -823,27 +676,24 @@ header {
             </div> 
         </aside>
       </div>
-  <!------Opinion story column ended----->
-    
 
-  <!---------IN MAGAZINE SECTION------------->
   <div class="text-center my-4">
     <h5><span class="bg-danger p-1 text-white h5"><b>N</b></span><b> IN MAGAZINE</b></h5>
-  <b><hr></b>
+  <hr>
   </div>
-  <section class="row mx-2">
+  <div class="row mx-2">
     <div class=" col-12 col-md-6 col-lg">
-      <article class=" mt-3 mb-5 in_magazine_row">
+      <article class=" mt-3 mb-5 article_image_1">
         <a href="#" class="text-dark">
-           <img src="images\youth.webp" alt="news" width="100%" class="img-fluid h-75">
+           <img src="images/youth.webp" alt="news" class="img-fluid">
            <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
            <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
         </a>
         <h4 class="h5"><a href="#"><b>OK, Millennial: Boomers Are the Greatest Generation in History</b></a></h4>
       </article>
-      <article class="mt-3 mb-5 in_magazine_row">
+      <article class="mt-3 mb-5 article_image_1">
         <a href="#" class="text-dark">
-           <img src="images\city.webp" alt="news" width="100%" class="img-fluid h-75">
+           <img src="images/city.webp" alt="news" class="img-fluid ">
            <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
            <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
         </a>
@@ -851,35 +701,17 @@ header {
       </article>
     </div>
     <div class=" col-12 col-md-6 col-lg">
-      <article class="mt-3 mb-5 in_magazine_row">
+      <article class="mt-3 mb-5 article_image_1">
         <a href="#" class="text-dark">
-           <img src="images\downtime.webp" alt="news" width="100%" class="img-fluid h-75">
+           <img src="images/downtime.webp" alt="news" class="img-fluid">
            <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
            <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
         </a>
         <h4 class="h5"><a href="#"><b>OK, Millennial: Boomers Are the Greatest Generation in History</b></a></h4>
       </article>
-      <article class=" mt-3 mb-5 in_magazine_row">
+      <article class=" mt-3 mb-5 article_image_1">
         <a href="#" class="text-dark">
-           <img src="images\city.webp" alt="news" width="100%" class="img-fluid h-75">
-           <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
-           <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
-        </a>
-        <h4 class="h5"><a href="#"><b>OK, Millennial: Boomers Are the Greatest Generation in History</b></a></h4>
-      </article>
-    </div>
-    <div class=" col-12 col-md-6 col-lg">
-      <article class="mt-3 mb-5 in_magazine_row">
-        <a href="#" class="text-dark">
-           <img src="images\downtime.webp" alt="news" width="100%" class="img-fluid h-75">
-           <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
-           <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
-        </a>
-        <h4 class="h5"><a href="#"><b>OK, Millennial: Boomers Are the Greatest Generation in History</b></a></h4>
-      </article>
-      <article class=" mt-3 mb-5 in_magazine_row">
-        <a href="#" class="text-dark">
-           <img src="images\city.webp" alt="news" width="100%" class="img-fluid h-75">
+           <img src="images/city.webp" alt="news"  class="img-fluid">
            <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
            <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
         </a>
@@ -887,17 +719,35 @@ header {
       </article>
     </div>
     <div class=" col-12 col-md-6 col-lg">
-      <article class="mt-3 mb-5 in_magazine_row">
+      <article class="mt-3 mb-5 article_image_1">
         <a href="#" class="text-dark">
-           <img src="images\city.webp" alt="news" width="100%" class="img-fluid h-75">
+           <img src="images/downtime.webp" alt="news" class="img-fluid">
            <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
            <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
         </a>
         <h4 class="h5"><a href="#"><b>OK, Millennial: Boomers Are the Greatest Generation in History</b></a></h4>
       </article>
-      <article class=" mt-3 mb-5 in_magazine_row">
+      <article class=" mt-3 mb-5 article_image_1">
         <a href="#" class="text-dark">
-           <img src="images\downtime.webp" alt="news" width="100%" class="img-fluid h-75">
+           <img src="images/city.webp" alt="news"  class="img-fluid">
+           <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
+           <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
+        </a>
+        <h4 class="h5"><a href="#"><b>OK, Millennial: Boomers Are the Greatest Generation in History</b></a></h4>
+      </article>
+    </div>
+    <div class=" col-12 col-md-6 col-lg">
+      <article class="mt-3 mb-5 article_image_1">
+        <a href="#" class="text-dark">
+           <img src="images/city.webp" alt="news" class="img-fluid">
+           <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
+           <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
+        </a>
+        <h4 class="h5"><a href="#"><b>OK, Millennial: Boomers Are the Greatest Generation in History</b></a></h4>
+      </article>
+      <article class=" mt-3 mb-5 article_image_1">
+        <a href="#" class="text-dark">
+           <img src="images/downtime.webp" alt="news"  class="img-fluid ">
            <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
            <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
         </a>
@@ -906,19 +756,19 @@ header {
     </div>
     
     
-</section>
-  <!---------IN EDITOR'S PICK------------->
+  </div>
+  
   <div class="text-center my-4">
         <h5><span class="bg-danger p-1 text-white h5"><b>N</b></span><b> EDITOR'S PICK</b></h5>
-      <b><hr></b>
+      <hr>
   </div>
     
 
-  <section class="row">
+  <div class="row">
           <div class=" col-12 col-md-6 col-lg">
-            <article class=" my-2">
+            <article class="article_image my-lg-2 my-3 ">
               <a href="#" class="text-dark">
-                 <img src="images\city.webp" alt="news" width="100%" class="img-fluid ">
+                 <img src="images/city.webp" alt="news"  class="img-fluid ">
                  <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
               </a>
               <div class="caption">
@@ -928,9 +778,9 @@ header {
                   </p>        
               </div> 
             </article>
-            <article class="my-2">
+            <article class=" article_image my-lg-2 my-3">
               <a href="#" class="text-dark">
-                 <img src="images\slamstrump.webp" alt="news" width="100%" class="img-fluid ">
+                 <img src="images/slamstrump.webp" alt="news"  class="img-fluid ">
                  <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
               </a>
               <div class="caption">
@@ -942,9 +792,9 @@ header {
             </article>
           </div>
           <div class=" col-12 col-md-6 col-lg">
-            <article class=" my-2">
+            <article class=" article_image my-lg-2 my-3">
               <a href="#" class="text-dark">
-                 <img src="images\city.webp" alt="news" width="100%" class="img-fluid ">
+                 <img src="images/city.webp" alt="news"  class="img-fluid ">
                  <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
               </a>
               <div class="caption">
@@ -954,12 +804,12 @@ header {
                   </p>        
               </div> 
             </article>
-            <article class="my-2">
+            <article class=" article_image my-lg-2 my-3">
               <a href="#" class="text-dark">
-                 <img src="images\slamstrump.webp" alt="news" width="100%" class="img-fluid ">
+                 <img src="images/slamstrump.webp" alt="news" class="img-fluid ">
                  <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
               </a>
-              <div class="caption">
+              <div class="caption article_image">
                   <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h4>
                   <p><small>Buttigieg, 38, the first openly gay major presidential candidate, 
                     has ended his 2020 White House bid. He may have to do a lot more to standout and make a difference</small>
@@ -968,9 +818,9 @@ header {
             </article>
           </div>
           <div class=" col-12 col-md-6 col-lg">
-            <article class=" my-2">
+            <article class=" article_image my-lg-2 my-3">
               <a href="#" class="text-dark">
-                 <img src="images\city.webp" alt="news" width="100%" class="img-fluid ">
+                 <img src="images/city.webp" alt="news" class="img-fluid ">
                  <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>U.S</b></span>
               </a>
               <div class="caption">
@@ -980,9 +830,9 @@ header {
                   </p>        
               </div> 
             </article>
-            <article class="my-2">
+            <article class=" article_image my-lg-2 my-3">
               <a href="#" class="text-dark">
-                 <img src="images\slamstrump.webp" alt="news" width="100%" class="img-fluid ">
+                 <img src="images/slamstrump.webp" alt="news" class="img-fluid ">
                  <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
               </a>
               <div class="caption">
@@ -994,9 +844,9 @@ header {
             </article>
           </div>
           <div class=" col-12 col-md-6 col-lg">
-            <article class=" my-2">
+            <article class=" article_image my-lg-2 my-3">
               <a href="#" class="text-dark">
-                 <img src="images\city.webp" alt="news" width="100%" class="img-fluid ">
+                 <img src="images/city.webp" alt="news" class="img-fluid ">
                  <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>U.S</b></span>
               </a>
               <div class="caption">
@@ -1006,9 +856,9 @@ header {
                   </p>        
               </div> 
             </article>
-            <article class="my-2">
-              <a href="#" class="text-dark">
-                 <img src="images\slamstrump.webp" alt="news" width="100%" class="img-fluid ">
+            <article class="article_image my-lg-2 my-3">
+                 <a href="#" class="text-dark">
+                 <img src="images/slamstrump.webp" alt="news" class="img-fluid ">
                  <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
               </a>
               <div class="caption">
@@ -1019,20 +869,18 @@ header {
               </div> 
             </article>
           </div> 
-  </section>
-<!---------IN EDITOR'S PICK ended------------->
+  </div>
 
-<!---------FEATURED SLIDESHOW-------------------->
 <div class="text-center my-4">
   <h5><span class="bg-danger p-1 text-white h5"><b>N</b></span><b> FEATURED SLIDESHOW</b></h5>
-<b><hr></b>
+<hr>
 </div>
 
-<section class="row">
+<div class="row">
   <div class=" col-12 col-md col-lg">
-    <article class=" my-2">
+    <article class="article_image my-2">
       <a href="#" class="text-dark">
-         <img src="images\city.webp" alt="news" width="100%" class="img-fluid ">
+         <img src="images/city.webp" alt="news" class="img-fluid ">
          <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
       </a>
       <div class="caption">
@@ -1042,9 +890,9 @@ header {
           </p>        
       </div> 
     </article>
-    <article class="my-2">
+    <article class="article_image my-2">
       <a href="#" class="text-dark">
-         <img src="images\slamstrump.webp" alt="news" width="100%" class="img-fluid ">
+         <img src="images/slamstrump.webp" alt="news"  class="img-fluid ">
          <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
       </a>
       <div class="caption">
@@ -1056,9 +904,9 @@ header {
     </article>
   </div>
   <div class=" col-12 col-md col-lg">
-    <article class=" my-2">
+    <article class="article_image my-2">
       <a href="#" class="text-dark">
-         <img src="images\city.webp" alt="news" width="100%" class="img-fluid ">
+         <img src="images/city.webp" alt="news"  class="img-fluid ">
          <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
       </a>
       <div class="caption">
@@ -1068,9 +916,9 @@ header {
           </p>        
       </div> 
     </article>
-    <article class="my-2">
+    <article class="article_image my-2">
       <a href="#" class="text-dark">
-         <img src="images\slamstrump.webp" alt="news" width="100%" class="img-fluid ">
+         <img src="images/slamstrump.webp" alt="news"  class="img-fluid ">
          <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
       </a>
       <div class="caption">
@@ -1082,9 +930,9 @@ header {
     </article>
   </div>
   <div class=" col-12 col-md col-lg">
-    <article class=" my-2">
+    <article class="article_image my-2">
       <a href="#" class="text-dark">
-         <img src="images\city.webp" alt="news" width="100%" class="img-fluid ">
+         <img src="images/city.webp" alt="news"  class="img-fluid ">
          <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>U.S</b></span>
       </a>
       <div class="caption">
@@ -1094,9 +942,9 @@ header {
           </p>        
       </div> 
     </article>
-    <article class="my-2">
+    <article class="article_image my-2">
       <a href="#" class="text-dark">
-         <img src="images\slamstrump.webp" alt="news" width="100%" class="img-fluid ">
+         <img src="images/slamstrump.webp" alt="news"  class="img-fluid ">
          <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
       </a>
       <div class="caption">
@@ -1107,18 +955,17 @@ header {
       </div> 
     </article>
   </div>
-  </section>
+</div>
   <div class="my-4">
-    <b><hr></b>
+    <hr>
     <h5 class="my-3 text-danger h5"><b>HEALTH</b></h5>
   </div>
 
-  <section class="row">
+  <div class="row">
   <div class=" col-12 col-md col-lg">
-    
-    <article class="my-2">
+    <article class="article_image my-2">
       <a href="#" class="text-dark">
-         <img src="images\slamstrump.webp" alt="news" width="100%" class="img-fluid ">
+         <img src="images/slamstrump.webp" alt="news"  class="img-fluid ">
          <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
       </a>
       <div class="caption">
@@ -1131,9 +978,9 @@ header {
   </div>
   <div class=" col-12 col-md col-lg">
     
-    <article class="my-2">
+    <article class="article_image my-2">
       <a href="#" class="text-dark">
-         <img src="images\slamstrump.webp" alt="news" width="100%" class="img-fluid ">
+         <img src="images/slamstrump.webp" alt="news" class="img-fluid ">
          <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
       </a>
       <div class="caption">
@@ -1146,31 +993,31 @@ header {
   </div>
   <div class=" col-12 col-md col-lg">
     <article class="d-inline-flex my-2">
-      <img src="images\stories.webp" alt="news" width="110"  class="img-fluid" >
+      <img src="images/stories.webp" alt="news" width="110"  class="img-fluid" >
       <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation. <br></b></h6>
     </article>
-    <b><hr></b>
+    <div><hr></div>
     <article class="d-inline-flex my-4">
-    <img src="images\blair.webp" alt="news" width="110"  class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="110"  class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b> More Than a Consolation Prize. It's a Necessity <br></b></h6>
     </article>
-    <b><hr></b>
+    <div><hr></div>
     <article class="d-inline-flex my-3">
-    <img src="images\stories.webp" alt="news" width="110" class="img-fluid" >
+    <img src="images/stories.webp" alt="news" width="110" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>VP Is More Than a Consolation Prize. <br></b></h6>
     </article>
   </div>
-</section>
+</div>
 <div class="my-4">
-  <b><hr></b>
+  <hr>
   <h5 class="my-3 text-danger h5"><b>WORLD</b></h5>
   </div>
-<section class="row">
+<div class="row">
   <div class=" col-12 col-md col-lg">
     
-    <article class="my-2">
+    <article class="article_image my-2">
       <a href="#" class="text-dark">
-         <img src="images\slamstrump.webp" alt="news" width="100%" class="img-fluid ">
+         <img src="images/slamstrump.webp" alt="news" class="img-fluid ">
          <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
       </a>
       <div class="caption">
@@ -1183,9 +1030,9 @@ header {
   </div>
   <div class=" col-12 col-md col-lg">
     
-    <article class="my-2">
+    <article class="article_image my-2">
       <a href="#" class="text-dark">
-         <img src="images\slamstrump.webp" alt="news" width="100%" class="img-fluid ">
+         <img src="images/slamstrump.webp" alt="news" class="img-fluid ">
          <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
       </a>
       <div class="caption">
@@ -1198,31 +1045,30 @@ header {
   </div>
   <div class=" col-12 col-md col-lg">
     <article class="d-inline-flex my-2">
-      <img src="images\stories.webp" alt="news" width="110"  class="img-fluid" >
+      <img src="images/stories.webp" alt="news" width="110"  class="img-fluid" >
       <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation. <br></b></h6>
     </article>
-    <b><hr></b>
+    <div><hr></div>
     <article class="d-inline-flex my-4">
-    <img src="images\blair.webp" alt="news" width="110"  class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="110"  class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b> More Than a Consolation Prize. It's a Necessity <br></b></h6>
     </article>
-    <b><hr></b>
+    <div><hr></div>
     <article class="d-inline-flex my-3">
-    <img src="images\stories.webp" alt="news" width="110" class="img-fluid" >
+    <img src="images/stories.webp" alt="news" width="110" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>VP Is More Than a Consolation Prize. <br></b></h6>
     </article>
   </div>
-</section>
+</div>
 <div class="my-4">
-  <b><hr></b>
+  <div><hr></div>
   <h5 class="my-3 text-danger h5"><b>BUSINESS</b></h5>
   </div>
-<section class="row">
+<div class="row">
   <div class=" col-12 col-md col-lg">
-    
-    <article class="my-2">
+    <article class="article_image my-2">
       <a href="#" class="text-dark">
-         <img src="images\slamstrump.webp" alt="news" width="100%" class="img-fluid ">
+         <img src="images/slamstrump.webp" alt="news"  class="img-fluid ">
          <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
       </a>
       <div class="caption">
@@ -1234,14 +1080,13 @@ header {
     </article>
   </div>
   <div class=" col-12 col-md col-lg">
-    
-    <article class="my-2">
+    <article class="article_image my-2">
       <a href="#" class="text-dark">
-         <img src="images\slamstrump.webp" alt="news" width="100%" class="img-fluid ">
+         <img src="images/slamstrump.webp" alt="news"  class="img-fluid ">
          <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
       </a>
       <div class="caption">
-          <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h4>
+          <h4 class="h5"><a href="#"><b>Coronavirus might be a death sentence to many living.</b></a></h4>
           <p><small>Buttigieg, 38, the first openly gay major presidential candidate, 
             has ended his 2020 White House bid. He may have to do a lot more to standout and make a difference</small>
           </p>        
@@ -1250,35 +1095,34 @@ header {
   </div>
   <div class=" col-12 col-md col-lg">
     <article class="d-inline-flex my-2">
-      <img src="images\stories.webp" alt="news" width="110"  class="img-fluid" >
+      <img src="images/stories.webp" alt="news" width="110"  class="img-fluid" >
       <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation. <br></b></h6>
     </article>
-    <b><hr></b>
+    <div><hr></div>
     <article class="d-inline-flex my-4">
-    <img src="images\blair.webp" alt="news" width="110"  class="img-fluid" >
-    <h6 class="h6 ml-3 text-left nowrap"><b> More Than a Consolation Prize. It's a Necessity <br></b></h6>
+    <img src="images/blair.webp" alt="news" width="110"  class="img-fluid" >
+    <h6 class="h6 ml-3 text-left nowrap"><b> Coronavirus might be a death sentence to many living. <br></b></h6>
     </article>
-    <b><hr></b>
+    <div><hr></div>
     <article class="d-inline-flex my-3">
-    <img src="images\stories.webp" alt="news" width="110" class="img-fluid" >
-    <h6 class="h6 ml-3 text-left nowrap"><b>VP Is More Than a Consolation Prize. <br></b></h6>
+    <img src="images/stories.webp" alt="news" width="110" class="img-fluid" >
+    <h6 class="h6 ml-3 text-left nowrap"><b>Coronavirus might be a death sentence to many living. <br></b></h6>
     </article>
   </div>
-</section>
+</div>
 <div class="my-4">
-  <b><hr></b>
+  <div><hr></div>
   <h5 class="my-3 text-danger h5"><b>SPORT</b></h5>
   </div>
-<section class="row">
+<div class="row">
   <div class=" col-12 col-md col-lg">
-    
-    <article class="my-2">
+    <article class="article_image my-2">
       <a href="#" class="text-dark">
-         <img src="images\slamstrump.webp" alt="news" width="100%" class="img-fluid ">
+         <img src="images/slamstrump.webp" alt="news"  class="img-fluid ">
          <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
       </a>
       <div class="caption">
-          <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h3>
+          <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h4>
           <p><small>Buttigieg, 38, the first openly gay major presidential candidate, 
             has ended his 2020 White House bid. He may have to do a lot more to standout and make a difference</small>
           </p>        
@@ -1286,14 +1130,13 @@ header {
     </article>
   </div>
   <div class=" col-12 col-md col-lg">
-    
-    <article class="my-2">
+    <article class="article_image my-2">
       <a href="#" class="text-dark">
-         <img src="images\slamstrump.webp" alt="news" width="100%" class="img-fluid ">
+         <img src="images/slamstrump.webp" alt="news" class="img-fluid ">
          <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>HEALTH</b></span>
       </a>
       <div class="caption">
-          <h4 class="h5"><a href="#"><b>Tony Blair Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h3>
+          <h4 class="h5"><a href="#"><b>Sammo Hung Says Biden Must Offer More Than 'Back to Normal' to Beat Trump</b></a></h4>
           <p><small>Buttigieg, 38, the first openly gay major presidential candidate, 
             has ended his 2020 White House bid. He may have to do a lot more to standout and make a difference</small>
           </p>        
@@ -1302,32 +1145,28 @@ header {
   </div>
   <div class=" col-12 col-md col-lg">
     <article class="d-inline-flex my-2">
-      <img src="images\stories.webp" alt="news" width="120"  class="img-fluid" >
+      <img src="images/stories.webp" alt="news" width="120"  class="img-fluid" >
       <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation. <br></b></h6>
     </article>
-    <b><hr></b>
+    <div><hr></div>
     <article class="d-inline-flex my-3">
-    <img src="images\blair.webp" alt="news" width="120"  class="img-fluid" >
+    <img src="images/blair.webp" alt="news" width="120"  class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b> More Than a Consolation Prize. It's a Necessity <br></b></h6>
     </article>
-    <b><hr></b>
+    <div><hr></div>
     <article class="d-inline-flex my-3">
-    <img src="images\stories.webp" alt="news" width="120" class="img-fluid" >
+    <img src="images/stories.webp" alt="news" width="120" class="img-fluid" >
     <h6 class="h6 ml-3 text-left nowrap"><b>VP Is More Than a Consolation Prize. <br></b></h6>
     </article>
   </div>
-  </section>
-
-
-  <div>
-  <b><hr></b>
-  </div>
-<section class="container-fluid">
+</div>
+  <div><hr></div>
+<div class="container-fluid">
   <div class="row ">
     <div class=" col-12 col-lg-8 d-flex flex-column ">
       <span class="text-danger h6"><b>SUSCRIBE</b></span>
       <div class="d-inline-flex p-5 pr-5 bg-secondary ">
-        <img src="images\march.webp" alt="news" width="170" class="img-fluid" >
+        <img src="images/march.webp" alt="news" width="170" class="img-fluid" >
         <div class="py-5 px-4">
           <h6 class="h6 pr-5 py-2 text-left nowrap"><b>VP Is More Than a Consolation Prize.</b></h6>
           <p class="h6 pr-5 text-left "><small>VP Is More Than a Consolation Prize. 
@@ -1339,7 +1178,7 @@ header {
     <div class="col-12 col-lg-4 d-flex flex-column ">
         <span class="text-danger h6 mt-3 mt-lg-0"><b>NEWSLETTER</b></span>
         <div class="d-inline-flex newsletter">
-          <img src="images\stories.webp" alt="news" width="150" class="img-fluid" >
+          <img src="images/stories.webp" alt="news" width="150" class="img-fluid" >
           <div class="py-5 d-flex flex-column text-left justify-content-start pl-2 pr-5">
             <h6 class="h6 pr-5 "><b>VP Is More Than a Consolation Prize.</b></h6>
             <p class="h6 pr-5 py-3"><small>VP Is More Than a Consolation Prize. VP Is More Than a</small></p>
@@ -1350,10 +1189,10 @@ header {
         </div>
       </div> 
   </div>
-  </section>
+</div>
 </main>
 <div class="my-4">
-  <b><hr></b>
+  <hr>
 </div>
 <footer class="container-fluid px-4">
   <div class="mx-2 px-1 d-flex justify-content-between align-items-baseline">
@@ -1367,9 +1206,7 @@ header {
       </ul>
     </div>
   </div>
-  <div>
-    <b><hr></b>
-  </div>
+  <div><hr></div>
   `<div>
     <ul class="list-inline list-unstyled">
       <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#"><b>Editions:</b></a></li>
