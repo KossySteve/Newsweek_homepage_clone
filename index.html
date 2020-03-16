@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
      crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 <style>
 * {
   box-sizing: border-box;
@@ -16,7 +16,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 a {
@@ -57,6 +57,7 @@ a {
 .newsletter {
   border: 1px solid rgb(221, 217, 217);
   padding: 0;
+  height: 48vh;
 }
 
 .bg-secondary {
@@ -69,6 +70,11 @@ a {
 
 .nav_font {
   font-size: 14px;
+}
+
+header {
+  position: fixed;
+  top: 0;
 }
 
 .navbar {
@@ -84,7 +90,7 @@ a {
 }
 
 .in_magazine_row {
-  height: 55vh;
+  height: 54vh;
 }
 
 .magazine_btn {
@@ -94,18 +100,24 @@ a {
   color: white;
 }
 
+.links a {
+  border-right: 1px solid grey;
+  text-decoration: none;
+}
+
+.listed_links :last-child {
+  border: 0;
+}
 
 @media only screen and (min-width: 992px) {
   .nav_1 {
+    position: relative;
+    top: 20px;
     display: none;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  .nav_1 {
-    margin-bottom: 10px;
-  }
-
   .nav_2 {
     display: none;
   }
@@ -117,6 +129,10 @@ a {
   .links {
     display: none;
   }
+
+  main {
+    margin-top: 50px;
+  }
 }
 
 </style>
@@ -126,7 +142,7 @@ a {
   
     <header class="container-fluid"> 
 
-              <nav class=" navbar navbar-expand-md navbar-light sticky-top px-0 nav_1 ">
+              <nav class=" navbar navbar-expand-md navbar-light fixed-top px-0 nav_1 ">
                 <div class="d-flex justify-content-between align-items-baseline" >
                   <div class="d-flex align-items-baseline" >
                     <a class="navbar-brand mr-sm-4 mr-1" href="#"><img src="images\logo.PNG" alt="big idea" width="150"></a>
@@ -134,8 +150,8 @@ a {
                   </div>
                   <div class="d-flex align-items-baseline">
                     <a href="#" class="btn btn-danger nav-link text-white nav_font border rounded-0 border-0"><b>SIGN IN</b></a>
-                    <button class="btn bg-light nav-link text-danger nav_font border rounded-0 border-0 px-1 mx-1 mx-sm-4 py-1" type="submit"><b>SUSCRIBE ></b></button>
-                    <a class="btn bg-white navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#nav">
+                    <button class="btn bg-light nav-link text-danger nav_font border rounded-0 border-0 px-1 mx-2 mx-sm-4 py-1" type="submit"><b>SUSCRIBE ></b></button>
+                    <a class="btn bg-white navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#nav">
                       <i class="fas fa-bars"></i>
                     </a>
                    </div>
@@ -158,7 +174,7 @@ a {
                    </div>
                 </div>
             </nav>
-            <nav class="navbar nav_2">
+            <nav class="navbar nav_2 ">
               <div class=" d-flex justify-content-between align-items-baseline " >
           
                   <a class="navbar-brand text-white h6 px-4" href="#">32 C Lagos, NG</a>
@@ -173,21 +189,21 @@ a {
 
       
   <div class=" container-fluid links">
-    <div class=" d-flex mx-1 my-3 justify-content-start ">
-      <a href="#" class=" mx-2"><b>U.S</b></a>
-      <a href="#" class=" mx-2"><b>World</b></a>
-      <a href="#" class=" mx-2"><b>Business</b></a>
-      <a href="#" class=" mx-2"><b>Tech & Science</b></a>
-      <a href="#" class=" mx-2"><b>Culture</b></a>
-      <a href="#" class=" mx-2"><b>Newsgeek</b></a>
-      <a href="#" class=" mx-2"><b>Sport</b></a>
-      <a href="#" class=" mx-2"><b>Health</b></a>
-      <a href="#" class=" mx-2"><b>The Debate</b></a>
-      <a href="#" class=" mx-2"><b>Vantage</b></a>
-      <a href="#" class=" mx-2"><b>Weather</b></a>
-      <a href="#" class=" mx-2"><b>Search</b></a>
-      <a href="#" class=" mx-2"><b><i class="fas fa-search"></i></b></a>
-  </div>
+    <div class=" d-flex my-3 justify-content-start listed_links ">
+      <a href="#" class=" mx-2 pr-2 px-0"><b>U.S</b></a>
+      <a href="#" class=" mx-2 pr-2"><b>World</b></a>
+      <a href="#" class=" mx-2 pr-2"><b>Business</b></a>
+      <a href="#" class=" mx-2 pr-2 text-nowrap"><b>Tech & Science</b></a>
+      <a href="#" class=" mx-2 pr-2"><b>Culture</b></a>
+      <a href="#" class=" mx-2 pr-2"><b>Newsgeek</b></a>
+      <a href="#" class=" mx-2 pr-2"><b>Sport</b></a>
+      <a href="#" class=" mx-2 pr-2"><b>Health</b></a>
+      <a href="#" class=" mx-2 pr-2 text-nowrap"><b>The Debate</b></a>
+      <a href="#" class=" mx-2 pr-2"><b>Vantage</b></a>
+      <a href="#" class=" mx-2 pr-2"><b>Weather</b></a>
+      <a href="#" class=" mx-2 pr-2"><b>Search</b></a>
+      <a href="#" class=" mx-2 pr-2"><b><i class="fas fa-search"></i></b></a>
+    </div>
   </div> 
   <b><hr></b>
   </header>
@@ -1293,7 +1309,7 @@ a {
   <b><hr></b>
   </div>
 <section class="container-fluid">
-  <div class="row">
+  <div class="row ">
     <div class=" col-12 col-lg-8 d-flex flex-column ">
       <span class="text-danger h6"><b>SUSCRIBE</b></span>
       <div class="d-inline-flex p-5 pr-5 bg-secondary ">
@@ -1321,7 +1337,6 @@ a {
       </div> 
   </div>
   </section>
-  
 </main>
 <div class="my-4">
   <b><hr></b>
