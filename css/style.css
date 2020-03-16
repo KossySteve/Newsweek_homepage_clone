@@ -49,6 +49,10 @@ a {
   height: 55vh;
 }
 
+.newsletter img {
+  height: 55vh;
+}
+
 .bg-secondary {
   background-color: rgb(238, 236, 236);
 }
