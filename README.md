@@ -1,7 +1,7 @@
 # Newsweek_homepage_clone
 This is a microverse solo project to clone a responsive website using HTML, bootstrap &amp; CSS.
 
-![screenshot](.images/screenshot.png)
+![screenshot](.images/screenshot.PNG)
 
 ## Built With
 
