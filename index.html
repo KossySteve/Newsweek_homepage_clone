@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsweek</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" 
-        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
      crossorigin="anonymous">
 <style>
@@ -63,61 +62,138 @@ a {
 .bg-secondary {
   background-color: rgb(238, 236, 236);
 }
+
+.text-secondary {
+  color: rgb(153, 151, 151);
+}
+
+.nav_font {
+  font-size: 14px;
+}
+
+.navbar {
+  background-color: #f72210;
+}
+
+.nav-link {
+  background-color: #f72210;
+}
+
+.navbar button {
+  background-color: white;
+}
+
+.in_magazine_row {
+  height: 55vh;
+}
+
+.magazine_btn {
+  background-color: #f72210;
+  position: absolute;
+  position: relative;
+  color: white;
+}
+
+
+@media only screen and (min-width: 992px) {
+  .nav_1 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .nav_1 {
+    margin-bottom: 10px;
+  }
+
+  .nav_2 {
+    display: none;
+  }
+
+  .location {
+    display: none;
+  }
+
+  .links {
+    display: none;
+  }
+}
+
 </style>
 
 </head>
 <body>
-  <div class="container-fluid">
-    <header class="container-fluid" >
-      <nav class="navbar bg-danger">
-          <ul class="navbar-nav flex-row">
-              <li class="nav-item col-4 "><a href="#" class="nav-brand h3 text-white">Newsweek</a></li>
-              <li class="nav-item col-2"><a href="#" class=" btn btn-danger nav-link text-white"><b>SIGN IN</b></a></li>
-              <li class="nav-item col-2"><button class="btn btn-white rounded-0 text-danger" type="submit"><b>SUSCRIBE ></b></button></li>
-              <li class="nav-item col-2">
-                  <button class="btn btn-danger justify navbar-toggle pt-n2"  data-toggle="collapse" data-target="#links"type="submit">
-                      <b><i class="fas fa-bars fa-2x"></i></b>
-                  </button>
-              </li>
-              <div class="collapse navbar-collapse" id="links">
-                      <ul class="navbar-nav">
-                          <li><input type="text" placeholder="search"> </li>
-                          <li>U.S.</li>
-                          <li>World</li>
-                          <li>Business</li>
-                          <li>Tech & Science</li>
-                          <li>Culture</li>
-                          <li>Newsgeek</li>
-                          <li>Sports</li>
-                          <li>Health</li>
-                          <li>The Debate</li>
-                          <li>Vantage</li>
-                          <li>Weather</li>
-                      </ul>
+  
+    <header class="container-fluid"> 
+
+              <nav class=" navbar navbar-expand-md navbar-light sticky-top px-0 nav_1 ">
+                <div class="d-flex justify-content-between align-items-baseline" >
+                  <div class="d-flex align-items-baseline" >
+                    <a class="navbar-brand mr-sm-4 mr-1" href="#"><img src="images\logo.PNG" alt="big idea" width="150"></a>
+                    <a class="navbar-brand text-white nav_font location" href="#">32 C Lagos, NG</a>
                   </div>
-              </li> 
-          </ul>
-      </nav>
-      <div class="row my-md-2 bg-secondary">
-          <ul class="d-flex flex-row list-unstyled">
-              <li class="mx-md-3 border-left-1"><b>U.S.</b></li>
-              <li class="mx-md-3"><b>World</b></li>
-              <li class="mx-md-3"><b>Business</b></li>
-              <li class="mx-md-3"><b>Tech & Science</b></li>
-              <li class="mx-md-3"><b>Culture</b></li>
-              <li class="mx-md-3"><b>Newsgeek</b></li>
-              <li class="mx-md-3"><b>Sports</b></li>
-              <li class="mx-md-3"><b>Health</b></li>
-              <li class="mx-md-3"><b>The Debate</b></li>
-              <li class="mx-md-3"><b>Vantage</b></li>
-              <li class="mx-md-3"><b>Weather</b></li>
-              <li class="mx-md-3">Search</li>
-          </ul>
+                  <div class="d-flex align-items-baseline">
+                    <a href="#" class="btn btn-danger nav-link text-white nav_font border rounded-0 border-0"><b>SIGN IN</b></a>
+                    <button class="btn bg-light nav-link text-danger nav_font border rounded-0 border-0 px-1 mx-1 mx-sm-4 py-1" type="submit"><b>SUSCRIBE ></b></button>
+                    <a class="btn bg-white navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#nav">
+                      <i class="fas fa-bars"></i>
+                    </a>
+                   </div>
+                  
+                   <div class="collapse navbar-collapse" id="nav">
+                       <ul class="navbar-nav ml-auto ">
+                           <li class="nav-item active"><a class="nav-link" href="#">U.S</a></li>
+                           <li class="nav-item"><a class="nav-link"  href="#">World</a></li>
+                           <li class="nav-item"><a class="nav-link"  href="#">Business</a></li>
+                           <li class="nav-item"><a  class="nav-link" href="#">Culture</a></li>
+                           <li class="nav-item "><a class="nav-link" href="#">Tech & Science</a></li>
+                           <li class="nav-item"><a class="nav-link"  href="#">Health</a></li>
+                           <li class="nav-item"><a class="nav-link"  href="#">Debate</a></li>
+                           <li class="nav-item"><a  class="nav-link" href="#">Vantage</a></li>
+                           <li class="nav-item "><a class="nav-link" href="#">Sport</a></li>
+                           <li class="nav-item"><a class="nav-link"  href="#">Blog</a></li>
+                           <li class="nav-item"><a class="nav-link"  href="#">Contact</a></li>
+                           <li class="nav-item"><a  class="nav-link" href="#">Newsgeek</a></li>
+                       </ul>
+                   </div>
+                </div>
+            </nav>
+            <nav class="navbar nav_2">
+              <div class=" d-flex justify-content-between align-items-baseline " >
+          
+                  <a class="navbar-brand text-white h6 px-4" href="#">32 C Lagos, NG</a>
+                  <a class="navbar-brand mr-sm-4 mr-1" href="#"><img src="images\logo.PNG" alt="big idea" width="450"></a>
+               
+                <div class="d-flex align-items-baseline">
+                  <a href="#" class="btn btn-danger nav-link text-white h6 border rounded-0 border-0"><b>SIGN IN</b></a>
+                  <button class="btn bg-light nav-link text-danger h6 border rounded-0 border-0 px-1 mx-1 mx-sm-4 py-1" type="submit"><b>SUSCRIBE ></b></button>
+                </div>
+              </div>
+            </nav>
+
+      
+  <div class=" container-fluid links">
+    <div class=" d-flex mx-1 my-3 justify-content-start ">
+      <a href="#" class=" mx-2"><b>U.S</b></a>
+      <a href="#" class=" mx-2"><b>World</b></a>
+      <a href="#" class=" mx-2"><b>Business</b></a>
+      <a href="#" class=" mx-2"><b>Tech & Science</b></a>
+      <a href="#" class=" mx-2"><b>Culture</b></a>
+      <a href="#" class=" mx-2"><b>Newsgeek</b></a>
+      <a href="#" class=" mx-2"><b>Sport</b></a>
+      <a href="#" class=" mx-2"><b>Health</b></a>
+      <a href="#" class=" mx-2"><b>The Debate</b></a>
+      <a href="#" class=" mx-2"><b>Vantage</b></a>
+      <a href="#" class=" mx-2"><b>Weather</b></a>
+      <a href="#" class=" mx-2"><b>Search</b></a>
+      <a href="#" class=" mx-2"><b><i class="fas fa-search"></i></b></a>
   </div>
+  </div> 
+  <b><hr></b>
   </header>
 
 
-<main class="container-fluid">
+<main class="container-fluid mx-3">
 <div class="row pl-3" >
 <!------featured story column started----->
 
@@ -527,14 +603,7 @@ a {
     containment will remain the country's top priority</small>
     </h6>
   </article>
-  <b><hr></b>
-  <article class="d-inline-flex">
-    <img src="images\blair.webp" alt="news" width="100" height="100" class="img-fluid" >
-    <h6 class="h6 ml-3 text-left nowrap"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity <br></b>
-    <small class="text-muted">Chinese officials said that while the number of new cases is declining, treatment and 
-    containment will remain the country's top priority</small>
-    </h6>
-  </article>
+  
 </section>
 
       
@@ -667,12 +736,6 @@ a {
               <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
               <h6 class="h6 ml-3 text-left nowrap"><b>More Than a Consolation Prize. It's a Necessity <br></b></h6>
              </div>
-             <b><hr></b>
-             <div class="d-inline-flex border border-danger">
-              <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
-              <h6 class="h6 ml-3 text-left nowrap"><b>More Than a Consolation Prize. It's a Necessity <br></b></h6>
-             </div>
-             
              <div class="card my-3">
               <a href="#" class="text-dark">
                 <img src="images\JoeBiden.webp" alt="news" width="100%" class="img-fluid ">
@@ -738,9 +801,82 @@ a {
     <h5><span class="bg-danger p-1 text-white h5"><b>N</b></span><b> IN MAGAZINE</b></h5>
   <b><hr></b>
   </div>
- <section>
-
- </section>
+  <section class="row mx-2">
+    <div class=" col-12 col-md-6 col-lg">
+      <article class=" mt-3 mb-5 in_magazine_row">
+        <a href="#" class="text-dark">
+           <img src="images\youth.webp" alt="news" width="100%" class="img-fluid h-75">
+           <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
+           <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
+        </a>
+        <h4 class="h5"><a href="#"><b>OK, Millennial: Boomers Are the Greatest Generation in History</b></a></h4>
+      </article>
+      <article class="mt-3 mb-5 in_magazine_row">
+        <a href="#" class="text-dark">
+           <img src="images\city.webp" alt="news" width="100%" class="img-fluid h-75">
+           <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
+           <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
+        </a>
+        <h4 class="h5"><a href="#"><b>OK, Millennial: Boomers Are the Greatest Generation in History</b></a></h4>
+      </article>
+    </div>
+    <div class=" col-12 col-md-6 col-lg">
+      <article class="mt-3 mb-5 in_magazine_row">
+        <a href="#" class="text-dark">
+           <img src="images\downtime.webp" alt="news" width="100%" class="img-fluid h-75">
+           <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
+           <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
+        </a>
+        <h4 class="h5"><a href="#"><b>OK, Millennial: Boomers Are the Greatest Generation in History</b></a></h4>
+      </article>
+      <article class=" mt-3 mb-5 in_magazine_row">
+        <a href="#" class="text-dark">
+           <img src="images\city.webp" alt="news" width="100%" class="img-fluid h-75">
+           <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
+           <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
+        </a>
+        <h4 class="h5"><a href="#"><b>OK, Millennial: Boomers Are the Greatest Generation in History</b></a></h4>
+      </article>
+    </div>
+    <div class=" col-12 col-md-6 col-lg">
+      <article class="mt-3 mb-5 in_magazine_row">
+        <a href="#" class="text-dark">
+           <img src="images\downtime.webp" alt="news" width="100%" class="img-fluid h-75">
+           <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
+           <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
+        </a>
+        <h4 class="h5"><a href="#"><b>OK, Millennial: Boomers Are the Greatest Generation in History</b></a></h4>
+      </article>
+      <article class=" mt-3 mb-5 in_magazine_row">
+        <a href="#" class="text-dark">
+           <img src="images\city.webp" alt="news" width="100%" class="img-fluid h-75">
+           <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
+           <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
+        </a>
+        <h4 class="h5"><a href="#"><b>OK, Millennial: Boomers Are the Greatest Generation in History</b></a></h4>
+      </article>
+    </div>
+    <div class=" col-12 col-md-6 col-lg">
+      <article class="mt-3 mb-5 in_magazine_row">
+        <a href="#" class="text-dark">
+           <img src="images\city.webp" alt="news" width="100%" class="img-fluid h-75">
+           <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
+           <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
+        </a>
+        <h4 class="h5"><a href="#"><b>OK, Millennial: Boomers Are the Greatest Generation in History</b></a></h4>
+      </article>
+      <article class=" mt-3 mb-5 in_magazine_row">
+        <a href="#" class="text-dark">
+           <img src="images\downtime.webp" alt="news" width="100%" class="img-fluid h-75">
+           <span class="btn magazine_btn rounded-0 border border-0 my-2"><b>COVER</b></span>
+           <span class="mx-2 text-danger btn my-2"><b>CULTURE</b></span>
+        </a>
+        <h4 class="h5"><a href="#"><b>OK, Millennial: Boomers Are the Greatest Generation in History</b></a></h4>
+      </article>
+    </div>
+    
+    
+</section>
   <!---------IN EDITOR'S PICK------------->
   <div class="text-center my-4">
         <h5><span class="bg-danger p-1 text-white h5"><b>N</b></span><b> EDITOR'S PICK</b></h5>
@@ -1171,13 +1307,13 @@ a {
       </div>
     </div>
     <div class="col-12 col-lg-4 d-flex flex-column ">
-        <span class="text-danger h6 mt-3"><b>NEWSLETTER</b></span>
+        <span class="text-danger h6 mt-3 mt-lg-0"><b>NEWSLETTER</b></span>
         <div class="d-inline-flex newsletter">
           <img src="images\stories.webp" alt="news" width="150" class="img-fluid" >
           <div class="py-5 d-flex flex-column text-left justify-content-start pl-2 pr-5">
             <h6 class="h6 pr-5 "><b>VP Is More Than a Consolation Prize.</b></h6>
-            <p class="h6 pr-5"><small>VP Is More Than a Consolation Prize. VP Is More Than a</small></p>
-            <div class="pr-5">
+            <p class="h6 pr-5 py-3"><small>VP Is More Than a Consolation Prize. VP Is More Than a</small></p>
+            <div class="pr-5 py-2">
               <button class="btn btn-danger text-white rounded-0 border border-0 "><b>SIGN UP ></b></button>
             </div>
           </div>
@@ -1190,52 +1326,53 @@ a {
 <div class="my-4">
   <b><hr></b>
 </div>
-<footer>
+<footer class="container-fluid px-4">
   <div class="mx-2 px-1 d-flex justify-content-between align-items-baseline">
     <h2><a href="#" class="text-danger"><b>Newsweek</b> </a> <span class="h6 text-secondary"><small>&copy; NEWSWEEK</small></span></h2>
     `<div>
-      <a href="#" class="px-3"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="px-3"><i class="fab fa-facebook"></i></a>
-      <a href="#" class="px-3"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-facebook"></i></a>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a class="social-icon text-center" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li class="list-inline-item"><a class="social-icon text-center" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li class="list-inline-item"><a class="social-icon text-center" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li class="list-inline-item"><a class="social-icon text-center" href="#"><i class="fab fa-facebook"></i></a></li>
+      </ul>
     </div>
   </div>
-  <div class="my-4">
+  <div>
     <b><hr></b>
   </div>
-  <ul class="d-inline-flex flex-row list-unstyled justify-content-between">
-    <li><b>Editions:</b></li>
-    <li>U.S. Edition</li>
-    <li>日本</li>
-    <li>Pakistan</li>
-    <li>Polska</li>
-    <li>România</li>
-  </ul>
-  <ul class="d-inline-flex flex-row list-unstyled justify-content-between">
-    <li>About Us</li>
-    <li>Corrections</li>
-    <li>Contact Us</li>
-    <li>Editorial Guidelines</li>
-    <li>Advertise</li>
-    <li>Copyright</li>
-    <li>Terms & Conditions</li>
-    <li> Privacy Policy</li>
-    <li>Cookie Policy</li>
-    <li>Terms of Sale</li>
-    <li>Archive</li>
-    <li>Announcements</li>    
-  </ul>
+  `<div>
+    <ul class="list-inline list-unstyled">
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#"><b>Editions:</b></a></li>
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#">U.S. Edition</a></li>
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#">日本</a></li>
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#">Polska</a></li>
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#">România</a></li>
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#">Polska</a></li>
+    </ul>
+
+    <ul class="list-inline list-unstyled ">
+      <li class="list-inline-item border border-right"><a class="social-icon text-center text-secondary" href="#"><b> About Us</b></a></li>
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#"> Corrections</a></li>
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#"> Contact Us</a></li>
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#"> Editorial Guidelines</a></li>
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#"> Copyright</a></li>
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#"> Polska</a></li>
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#"> Terms & Conditions</a></li>
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#"> Privacy Policy</a></li>
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#"> Cookie Policy</a></li>
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#"> Terms of Sale</a></li>
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#"> Announcements</a></li>
+      <li class="list-inline-item"><a class="social-icon text-center text-secondary" href="#">Archive </a></li>
+
+    </ul>
+  </div>
 </footer>
-
-</div>
-  
-    
-
-
-
+      
 
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+ 
 </body>
 </html>
