@@ -57,7 +57,7 @@ a {
 .newsletter {
   border: 1px solid rgb(221, 217, 217);
   padding: 0;
-  height: 48vh;
+  height: 55vh;
 }
 
 .bg-secondary {
@@ -109,11 +109,25 @@ header {
   border: 0;
 }
 
+.mx-md-auto {
+  width: 40vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .mx-md-auto {
+    width: 100%;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .nav_1 {
     position: relative;
     top: 20px;
     display: none;
+  }
+
+  .mx-md-auto {
+    width: 100%;
   }
 }
 
@@ -189,20 +203,20 @@ header {
 
       
   <div class=" container-fluid links">
-    <div class=" d-flex my-3 justify-content-start listed_links ">
-      <a href="#" class=" mx-2 pr-2 px-0"><b>U.S</b></a>
-      <a href="#" class=" mx-2 pr-2"><b>World</b></a>
-      <a href="#" class=" mx-2 pr-2"><b>Business</b></a>
-      <a href="#" class=" mx-2 pr-2 text-nowrap"><b>Tech & Science</b></a>
-      <a href="#" class=" mx-2 pr-2"><b>Culture</b></a>
-      <a href="#" class=" mx-2 pr-2"><b>Newsgeek</b></a>
-      <a href="#" class=" mx-2 pr-2"><b>Sport</b></a>
-      <a href="#" class=" mx-2 pr-2"><b>Health</b></a>
-      <a href="#" class=" mx-2 pr-2 text-nowrap"><b>The Debate</b></a>
-      <a href="#" class=" mx-2 pr-2"><b>Vantage</b></a>
-      <a href="#" class=" mx-2 pr-2"><b>Weather</b></a>
-      <a href="#" class=" mx-2 pr-2"><b>Search</b></a>
-      <a href="#" class=" mx-2 pr-2"><b><i class="fas fa-search"></i></b></a>
+    <div class=" d-flex my-3 justify-content-between listed_links ">
+      <a href="#" class=" pr-3  px-0"><b>U.S</b></a>
+      <a href="#" class=" pr-3 "><b>World</b></a>
+      <a href="#" class=" pr-3 "><b>Business</b></a>
+      <a href="#" class=" pr-3  text-nowrap"><b>Tech & Science</b></a>
+      <a href="#" class=" pr-3 "><b>Culture</b></a>
+      <a href="#" class=" pr-3 "><b>Newsgeek</b></a>
+      <a href="#" class=" pr-3 "><b>Sport</b></a>
+      <a href="#" class=" pr-3 "><b>Health</b></a>
+      <a href="#" class=" pr-3  text-nowrap"><b>The Debate</b></a>
+      <a href="#" class=" pr-3 "><b>Vantage</b></a>
+      <a href="#" class=" pr-3 "><b>Weather</b></a>
+      <a href="#" class=" pr-3 "><b>Search</b></a>
+      <a href="#" class=" pr-3 "><b><i class="fas fa-search"></i></b></a>
     </div>
   </div> 
   <b><hr></b>
@@ -632,7 +646,7 @@ header {
           <h6 class="text-secondary">Opinion</h6>
             <div class="d-inline-flex ">
                 <img src="images\allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2">
-                  <h6 class="h6 ml-3 text-left nowrap">
+                  <h6 class="h6 ml-3 text-left ">
                     <a href="#"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</b></a><br>
                     <small class="text-muted">BY AIMEE ALLISON</small>
                   </h6>
@@ -640,7 +654,15 @@ header {
             <b><hr></b>
             <div class="d-inline-flex ">
               <img src="images\allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2">
-                <h6 class="h6 ml-3 text-left nowrap">
+                <h6 class="h6 ml-3 text-left ">
+                  <a href="#"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</b></a><br>
+                  <small class="text-muted">BY AIMEE ALLISON</small>
+                </h6>
+            </div>   
+            <b><hr></b>
+            <div class="d-inline-flex ">
+              <img src="images\allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2">
+                <h6 class="h6 ml-3 text-left">
                   <a href="#"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</b></a><br>
                   <small class="text-muted">BY AIMEE ALLISON</small>
                 </h6>
@@ -656,7 +678,7 @@ header {
             <b><hr></b>
             <div class="d-inline-flex ">
               <img src="images\allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2">
-                <h6 class="h6 ml-3 text-left nowrap">
+                <h6 class="h6 ml-3 text-left ">
                   <a href="#"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</b></a><br>
                   <small class="text-muted">BY AIMEE ALLISON</small>
                 </h6>
@@ -664,15 +686,7 @@ header {
             <b><hr></b>
             <div class="d-inline-flex ">
               <img src="images\allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2">
-                <h6 class="h6 ml-3 text-left nowrap">
-                  <a href="#"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</b></a><br>
-                  <small class="text-muted">BY AIMEE ALLISON</small>
-                </h6>
-            </div>   
-            <b><hr></b>
-            <div class="d-inline-flex ">
-              <img src="images\allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2">
-                <h6 class="h6 ml-3 text-left nowrap">
+                <h6 class="h6 ml-3 text-left">
                   <a href="#"><b>A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</b></a><br>
                   <small class="text-muted">BY AIMEE ALLISON</small>
                 </h6>
@@ -685,7 +699,7 @@ header {
              </div>
              <div class="d-inline-flex border border-danger">
               <img src="images\stories.webp" alt="news" width="100" height="100" class="img-fluid" >
-              <h6 class="h6 ml-3 text-left nowrap"><b>More Than a Consolation Prize. It's a Necessity <br></b></h6>
+              <h6 class="h6 ml-3 text-left "><b>More Than a Consolation Prize. It's a Necessity <br></b></h6>
              </div>
              <div>
               <b><hr></b>
@@ -693,7 +707,7 @@ header {
              </div>
 
              <div class="d-inline-flex justify-content-between">
-              <h6><a href="#" class=""><b>BY AIMEE ALLISON</b></h6>
+              <h6><a href="#" class=""><b>BY AIMEE ALLISON</b></a></h6>
               <img src="images\allison.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2">
              </div> 
              <div class="text-center">
@@ -702,7 +716,7 @@ header {
 
              <div class="d-inline-flex border border-danger">
               <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
-              <h6 class="h6 ml-3 text-left nowrap"><b>More Than a Consolation Prize. It's a Necessity <br></b></h6>
+              <h6 class="h6 ml-3 text-left nowrap"><a href="#"><b>More Than a Consolation Prize. It's a Necessity <br></b></a></h6>
              </div>
              <div>
               <b><hr></b>
@@ -711,7 +725,7 @@ header {
 
              <div class="d-flex justify-content-between flex-row-reverse"> 
               <img src="images\john.webp" alt="news" width="60" height="60" class="rounded-circle ml-n2">
-              <span><a href="#" class="pl-n5"><b>BY JOHN SKRNA</b></span>
+              <span><a href="#" class="pl-n5"><b>BY JOHN SKRNA</b></a></span>
              </div> 
 
              <div class="mt-5 ">
@@ -720,50 +734,50 @@ header {
 
              <div class="d-inline-flex border border-danger">
               <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
-              <h6 class="h6 ml-3 text-left nowrap"><b>More Than a Consolation Prize. It's a Necessity <br></b></h6>
+              <h6 class="h6 ml-3 text-left nowrap"><a href="#"><b>More Than a Consolation Prize. It's a Necessity</b></a></h6>
              </div>
-             <b><hr></b>
+             <div><hr></div>
              <div class="d-inline-flex border border-danger">
               <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
-              <h6 class="h6 ml-3 text-left nowrap"><b>More Than a Consolation Prize. It's a Necessity <br></b></h6>
+              <h6 class="h6 ml-3 text-left nowrap"><a href="#"><b>More Than a Consolation Prize. It's a Necessity</b></a></h6>
              </div>
-             <b><hr></b>
+             <div><hr></div>
              <div class="d-inline-flex border border-danger">
               <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
-              <h6 class="h6 ml-3 text-left nowrap"><b>More Than a Consolation Prize. It's a Necessity <br></b></h6>
+              <h6 class="h6 ml-3 text-left nowrap"><a href="#"><b>More Than a Consolation Prize. It's a Necessity </b></a></h6>
              </div>
-             <b><hr></b>
+             <div><hr></div>
              <div class="d-inline-flex border border-danger">
               <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
-              <h6 class="h6 ml-3 text-left nowrap"><b>More Than a Consolation Prize. It's a Necessity <br></b></h6>
+              <h6 class="h6 ml-3 text-left nowrap"><a href="#"><b>More Than a Consolation Prize. It's a Necessity </b></a></h6>
              </div>
-             <b><hr></b>
+             <div><hr></div>
              <div class="d-inline-flex border border-danger">
               <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
-              <h6 class="h6 ml-3 text-left nowrap"><b>More Than a Consolation Prize. It's a Necessity <br></b></h6>
+              <h6 class="h6 ml-3 text-left nowrap"><a href="#"><b>More Than a Consolation Prize. It's a Necessity </b></a></h6>
              </div>
-             <b><hr></b>
+             <div><hr></div>
              <div class="d-inline-flex border border-danger">
               <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
-              <h6 class="h6 ml-3 text-left nowrap"><b>More Than a Consolation Prize. It's a Necessity <br></b></h6>
+              <h6 class="h6 ml-3 text-left nowrap"><a href="#"><b>More Than a Consolation Prize. It's a Necessity </b></a></h6>
              </div>
-             <b><hr></b>
+             <div><hr></div>
              <div class="d-inline-flex border border-danger">
               <img src="images\john.webp" alt="news" width="100" height="100" class="img-fluid" >
-              <h6 class="h6 ml-3 text-left nowrap"><b>More Than a Consolation Prize. It's a Necessity <br></b></h6>
+              <h6 class="h6 ml-3 text-left nowrap"><a href="#"><b>More Than a Consolation Prize. It's a Necessity </b></a></h6>
              </div>
-             <div class="card my-3">
+             <div class="card my-3 mx-md-auto">
               <a href="#" class="text-dark">
                 <img src="images\JoeBiden.webp" alt="news" width="100%" class="img-fluid ">
                 <span class="btn world_btn btn-secondary rounded-0 border border-0"><b>POLITICS</b></span>
              </a>
-              <div class="card-body px-4 py-2">
+              <div class="card-body px-4 py-2 ">
                 <h4 class="card-title h5"><b>Joe Biden Could Sweep States Bernie Sanders Won in 2016, Poll Shows</b></h4>
                 <p class="card-text">According to Public Policy Polling, Biden is leading Sanders in two of the 
                 senator's strongest 2016 states: Kansas and Wisconsin</p>
               </div>
               </div>
-            <div class="card my-3">
+            <div class="card my-3 mx-md-auto">
                 <a href="#" class="text-dark">
                   <img src="images\JoeBiden.webp" alt="news" width="100%" class="img-fluid ">
                   <span class="btn world_btn btn-secondary rounded-0 border border-0 text-primary"><b>SPONSORSHIP</b></span>
@@ -774,7 +788,7 @@ header {
                   senator's strongest 2016 states: Kansas and Wisconsin</p>
                 </div>
             </div>
-            <div class="card my-3">
+            <div class="card my-3 mx-md-auto">
               <a href="#" class="text-dark">
                 <img src="images\city.webp" alt="news" width="100%" class="img-fluid ">
                 <span class="btn world_btn btn-secondary rounded-0 border border-0 text-primary"><b>SPONSORSHIP</b></span>
@@ -785,7 +799,7 @@ header {
                 senator's strongest 2016 states: Kansas and Wisconsin</p>
               </div>
             </div>
-            <div class="card my-3">
+            <div class="card my-3 mx-md-auto">
               <a href="#" class="text-dark">
                 <img src="images\JoeBiden.webp" alt="news" width="100%" class="img-fluid ">
                 <span class="btn world_btn btn-secondary rounded-0 border border-0 text-primary"><b>SPONSORSHIP</b></span>
@@ -796,7 +810,7 @@ header {
                 senator's strongest 2016 states: Kansas and Wisconsin</p>
               </div>
             </div>
-            <div class="card my-3">
+            <div class="card my-3 mx-md-auto">
               <a href="#" class="text-dark">
                 <img src="images\city.webp" alt="news" width="100%" class="img-fluid ">
                 <span class="btn world_btn btn-secondary rounded-0 border border-0 text-primary"><b>SPONSORSHIP</b></span>
