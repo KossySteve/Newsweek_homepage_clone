@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+a {
+  color: black;
+}
+
+.btn-secondary {
+  position: relative;
+  top: -35px;
+  background-color: rgb(184, 181, 181);
+  color: red;
+}
+
+.caption {
+  margin: 0;
+  position: relative;
+  top: -20px;
+  line-height: 22px;
+}
+
+.caption p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.caption hr {
+  margin: 0;
+  padding: 0;
+}
+
+.caption_1 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -15px;
+}
+
+.bg-secondary {
+  background-color: rgb(238, 236, 236);
+}
+
+.navbar {
+  background-color: #f72210;
+}
+
+.text-secondary {
+  color: rgb(153, 151, 151);
+}
+
+.nav_font {
+  font-size: 14px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+}
+
+.nav-link {
+  background-color: rgba(245, 8, 8, 0.1);
+}
+
+.navbar button {
+  background-color: white;
+}
+
+.in_magazine_row {
+  height: 60vh;
+}
+
+.magazine_btn {
+  background-color: rgb(230, 38, 21);
+  position: absolute;
+  position: relative;
+  color: white;
+}
+
+.links a {
+  border-right: 1px solid grey;
+  text-decoration: none;
+}
+
+.listed_links :last-child {
+  border: 0;
+}
+
+.mx-md-auto {
+  width: 40vw;
+}
+
+.newsletter img {
+  object-fit: cover;
+}
+
+.article_image img {
+  width: 100%;
+}
+
+.article_image a img {
+  width: 100%;
+}
+
+.article_image_1 a img {
+  width: 100%;
+}
+
+.newsletter {
+  border: 1px solid rgb(200, 200, 200);
+}
