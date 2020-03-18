@@ -47,6 +47,10 @@ a {
   background-color: rgb(238, 236, 236);
 }
 
+.navbar {
+  background-color: #f72210;
+}
+
 .text-secondary {
   color: rgb(153, 151, 151);
 }
@@ -60,12 +64,8 @@ header {
   top: 0;
 }
 
-.navbar {
-  background-color: #f72210;
-}
-
 .nav-link {
-  background-color: #f72210;
+  background-color: rgba(245, 8, 8, 0.1);
 }
 
 .navbar button {
@@ -77,7 +77,7 @@ header {
 }
 
 .magazine_btn {
-  background-color: #f72210;
+  background-color: rgb(230, 38, 21);
   position: absolute;
   position: relative;
   color: white;
@@ -94,6 +94,10 @@ header {
 
 .mx-md-auto {
   width: 40vw;
+}
+
+.newsletter img {
+  object-fit: cover;
 }
 
 .article_image img {
