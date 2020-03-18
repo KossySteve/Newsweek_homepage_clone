@@ -17,7 +17,7 @@ This is a microverse solo project to clone a responsive website using HTML, boot
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/KossySteve/Newsweek_homepage_clone/ce8dbda7bfb272fe0bc809c8f67ea4b139acd4ce/index.html)
+[Live Demo Link](https://rawcdn.githack.com/KossySteve/Newsweek_homepage_clone/05029383108f591721578dc2f2dcb182f4a0c3dd/index.html)
 
 ## Authors
 
